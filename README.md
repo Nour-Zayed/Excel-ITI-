@@ -1,33 +1,72 @@
-## AdventureWorks Sales Dashboard - Excel
+## AdventureWorks Sales Dashboard & Data Warehouse
 
-### Overview
-This project presents a Sales Dashboard for AdventureWorks, built in Excel. It transforms raw sales data into actionable insights and KPIs, helping businesses track performance and make informed decisions.
+### Project Overview
 
-### Key Metrics & KPIs
+This project showcases a Star Schema Data Warehouse and an interactive Excel Sales Dashboard using AdventureWorks data. It consolidates sales, product, shipping, and territory data for actionable insights and strategic decision-making.
 
-Total Sales: $2,926,970,124
+## Data Warehouse
+### Fact Table
 
-Number of Orders: 31,465
+Fact_Order: SalesOrderID, SalesOrderDetailID, OrderQty, ProductID, LineTotal
 
-Total Tax: $251,809,269
+### Dimension Tables
 
-Number of Customers: 19,119
+Dim_Territory: TerritoryID, Territory
 
-Territories Covered: 10
+Dim_ShipMethod: ShipMethodID, ShipMethod
 
-### Features
+Dim_Products: ProductID, Product, Color, SubCategory, Category
 
-Interactive Dashboards: Filter sales data by year, category, territory, shipping method, and product attributes.
-Visual Insights: Total sales per category and territory, top 10 products, best-selling categories per territory, and monthly sales trends.
-Excel Tools Used: Pivot Tables, Conditional Formatting, Advanced Formulas, and Slicers.
+Dim_Date: Day Name, Year, Quarter, Month
+
+Star Schema design ensures fast querying and optimal aggregation.
+
+### Dashboard Overview
+
+### KPIs
+
+Total Sales: $2.93B
+
+Orders: 31,465
+
+Total Tax: $251.8M
+
+Customers: 19,119
+
+Territories: 10
+
+### Charts
+
+Sales per Category & Year
+
+Sales per Territory
+
+Top 10 Products
+
+Best-Selling Categories per Territory
+
+Orders per Category
+
+Customers per Territory
+
+Monthly Sales Trends
+
+Filters / Slicers: Year, SubCategory, ShipMethod, Color
+
+### Tools
+
+Excel: Pivot Tables, Power Pivot, Charts, Slicers, Formulas
+
+Data Modeling: Star Schema
 
 ### Purpose
-Helps businesses monitor sales performance, identify trends and top products, and make data-driven decisions efficiently.
+
+Monitor sales performance
+
+Identify trends & top products
+
+Support data-driven decisions
 
 ### Usage
 
-Open the Dashboard sheet and use slicers to explore the data interactively.
-
-### Technologies
-
-Microsoft Excel (Pivot Tables, Formulas, Charts, Slicers)
+Open the Dashboard sheet, use slicers to explore data interactively, and analyze sales trends and KPIs.
