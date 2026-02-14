@@ -6,9 +6,13 @@ This project presents a Sales Dashboard for AdventureWorks, built in Excel. It t
 ### Key Metrics & KPIs
 
 Total Sales: $2,926,970,124
+
 Number of Orders: 31,465
+
 Total Tax: $251,809,269
+
 Number of Customers: 19,119
+
 Territories Covered: 10
 
 ### Features
